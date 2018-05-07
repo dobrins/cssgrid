@@ -1,0 +1,33 @@
+.container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	/*grid-template-rows: repeat(2, 100px);*/
+	grid-auto-rows: 100px;
+	grid-auto-flow: dense;
+}
+
+.container div {
+	background: #ddd;
+	text-align: center;
+	font-weight: bold;
+	font-size:30px;
+	color: #fff;
+	font-family: arial;
+}
+
+.container div:nth-child(odd){background: #aaa}
+
+.horizontal {
+	grid-column: span 2;
+
+}
+
+.vertical {
+	grid-row: span 2;
+}
+
+.big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
