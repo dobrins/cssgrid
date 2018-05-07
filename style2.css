@@ -1,0 +1,18 @@
+.container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	/*grid-template-rows: repeat(2, 100px);*/
+	grid-auto-rows: 100px;
+}
+
+.container div {
+	background: #ddd;
+	text-align: center;
+	font-weight: bold;
+	font-size:30px;
+	color: #fff;
+	font-family: arial;
+}
+
+.container div:nth-child(odd){background: #aaa}
